@@ -9,15 +9,20 @@ Password suggestions that insert missing character classes and pad to minimum le
 Ready‑to‑run VS Code tasks and launch configs in .vscode/.
 
 ## Demo
-
-
+<img src="assets/Password.png" alt="App screenshot" width="900">
 
 ## Set up
+_Windows (MinGW‑w64 / MSYS2)_
+
 Install MSYS2 MinGW‑w64 toolchain (g++, gdb).
+
 Open this folder in VS Code.
 
-Build and run:
-Using VS Code: F5 (uses .vscode/tasks.json and .vscode/launch.json).
+### Build and run:
+
+Using VS Code: 
+
+F5 (uses .vscode/tasks.json and .vscode/launch.json).
 
 Using terminal:
 ```
@@ -26,8 +31,9 @@ g++ -std=c++17 -O2 Password_Suggestion_and_Cracking.cpp -o password_tool.exe
 ```
 .\password_tool.exe
 ```
+<br>
 
-Linux/macOS (Clang or GCC)
+_Linux/macOS (Clang or GCC)_
 
 ```
 g++ -std=c++17 -O2 Password_Suggestion_and_Cracking.cpp -o password_tool
