@@ -1,12 +1,12 @@
 # Password-Suggestion-and-Crack
-An interactive C++ console tool that evaluates a password’s composition, estimates naive brute‑force crack time, and suggests stronger variants. 
-The estimate assumes offline guessing at high rates, so strong 8–10 character mixed passwords may show durations in years or decades by design.
+An interactive C++ console app that analyzes password composition, estimates brute-force crack time based on character sets and guessing speeds, 
+and generates improved password suggestions. It’s designed for educational use to understand password strength metrics and improve security habits.
 
 ## Features
-Composition breakdown: counts uppercase, lowercase, digits, and special characters.
-Naive crack‑time estimate for educational purposes (offline brute force).
-Password suggestions that insert missing character classes and pad to minimum length.
-Ready‑to‑run VS Code tasks and launch configs in .vscode/.
+- Analyzes password characters: counts uppercase, lowercase, digits, and special symbols.
+- Estimates cracking time assuming offline brute-force at high guess rates (shows times from seconds to decades).
+- Generates password suggestions by adding missing character types and length padding.
+- Ready-to-run with Visual Studio Code configurations for building and debugging.
 
 ## Demo
 <img src="assets/Password.png" alt="App screenshot" width="900">
@@ -50,6 +50,6 @@ Crack rate: represents a high offline brute‑force throughput; online systems o
 Scope: educational estimator, not a forensic password audit; different hashes, salts, GPUs, and rate limits can change results by many orders of magnitude.
 
 ## Notes
-Estimates can be extremely large for strong passwords; that’s expected with high offline guess rates.
+This tool computes a theoretical brute-force cracking time based on detected character sets and a fixed offline guess rate (~2.8 billion guesses/sec). 
 
-Online authentication targets impose rate limits and lockouts; this tool does not model such controls
+Due to this assumption, strong passwords with diverse characters often yield large times, including years or decades.
