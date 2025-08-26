@@ -9,7 +9,7 @@ and generates improved password suggestions. It’s designed for educational use
 - Ready-to-run with Visual Studio Code configurations for building and debugging.
 
 ## Demo
-<img src="assets/Password.png" alt="App screenshot" width="900">
+![App screenshot](assets/Password.png)
 
 ## Set up
 _Windows (MinGW‑w64 / MSYS2)_
