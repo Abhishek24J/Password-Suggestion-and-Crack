@@ -1,0 +1,17 @@
+*.exe
+
+*.obj
+
+*.o
+
+*.pdb
+
+*.ilk
+
+.vscode/*
+
+!.vscode/tasks.json
+
+!.vscode/launch.json
+
+build/
